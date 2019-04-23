@@ -2,13 +2,12 @@
 
 *Conteúdo obtido durante a realização do curso [React + Redux: Fundamentos e Duas Apps do ABSOLUTO ZERO!](https://www.udemy.com/react-redux-pt/)*
 
-[Tutorial de Markdown](https://github.com/luong-komorebi/Markdown-Tutorial)
+*[Tutorial de Markdown](https://github.com/luong-komorebi/Markdown-Tutorial)*
 
 *******
-Tables of contents  
+## Índice  
  1. [Introdução](#intro)
  
-
 *******
 
 <div id='intro'/> 
@@ -19,7 +18,20 @@ Tables of contents
 ### Configuração do Ambiente
 
 
-## Seção 2 - 
+## Seção 2 - Fundamentos React
+
+### Configurando a Aplicação
+
+1. Configurar a aplicação com o pacote **create-react-app**
+
+    Instalar o pacote:    
+    '$ npm i -g create-react-app'
+
+    Criar o projeto
+    '$ create-react-app exercicios-react'
+
+
+
 
 ## Seção 3 - 
 
