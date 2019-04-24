@@ -1,11 +1,14 @@
 import React from 'react' //necessário para a utilização de JSX
 import ReactDOM from 'react-dom'
-import PrimeiroComponente from './componentes/PrimeiroComponente'
+import {CompA,  CompB as B} from './componentes/DoisComponentes'// é possivel adicionar um alias como em B
+// import PrimeiroComponente from './componentes/PrimeiroComponente'
+//ps. não é preciso que o nome do componente seja igual ao nome do arquivo, é apenas uma conveção
 
 const elemento =  document.getElementById('root')
 ReactDOM.render(
     <div>
-        <PrimeiroComponente />
+        <CompA valor='Olá, eu sou o A'/>
+        <B valor='B na área'/>
     </div>
 , elemento) 
 

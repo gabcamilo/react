@@ -7,7 +7,7 @@
 *******
 ## Índice  
  1. [Introdução](#intro)
- . [Fundamentos React](#fundamentos)
+ 2. [Fundamentos React](#fundamentos)
  
 *******
 
@@ -113,6 +113,45 @@ Um componente é "um pedaço" da aplicação, com se fosse um elemneto ou uma ta
 #### Primeiro Componete
 
 Arquivos com extensão **jsx** são componentes
+
+#### Usando Props
+
+No contexto JSX é necessário o uso de chaves para realizar a interpretação ou interpolação de código JavaScript, inclusive para a leitura de propriedades passadas como parâmetro, senão será interpretado como texto puro.
+
+```
+import React from 'react'
+
+let isLegal = true
+export default (props) => //props são propriedades passadas ao componente
+    <div>
+        <h1>{props.valor}</h1>
+        <h2>{Math.random()}</h2>
+        <p>É Legal? =>>>> {isLegal ? 'Sim' : 'Não'}</p>
+        <p>{props.valor2}</p>
+    </div>
+```
+#### Um Arquivo com Múltiplos Componentes
+Não é costume, mas é possível deixar mais de um componente em um único arquivo.
+Para isto é necessário fazer pequenas alterações na forma de importar e exportar.
+Na exportação, é necessário remover a palavra "default" e especificar os componentes que serão expotados:
+`export { CompA, CompB}`
+Na importação, é preciso, de forma semelhante, especificar o nome dos componentes importados `import {CompA,  CompB}`. Feito isto, todos os componentes podem ser utilizados normalmente.
+
+É possível ainda adicionar um *alias* aos componentes importados para facilitar sua utilização. No exemplo abaixo, o componente CompB deverá ser referenciado apenas pelo seu *alias* definido na hora da importação.
+
+```
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {CompA,  CompB as B} from './componentes/DoisComponentes'// é possivel adicionar um alias, como em B
+
+const elemento =  document.getElementById('root')
+ReactDOM.render(
+    <div>
+        <CompA valor='Olá, eu sou o A'/>
+        <B valor='B na área'/>
+    </div>
+, elemento) 
+```
 
 
 ## Seção 3 - 
