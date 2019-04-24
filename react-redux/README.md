@@ -24,14 +24,28 @@
 
 1. Configurar a aplicação com o pacote **create-react-app**
 
-    Instalar o pacote:    
-    '$ npm i -g create-react-app'
+ Instalar o pacote:    
+ `$ npm i -g create-react-app`
 
-    Criar o projeto
-    '$ create-react-app exercicios-react'
+ Criar o projeto:
+ `$ create-react-app exercicios-react`
 
+2. Limpar o projeto para Inicia-lo em branco
+    
+ * Deletar a pasta **src**
+ * Recria-la contendo apenas o arquivo **index.js**
 
+### Olá React
 
+No momento em que o React foi configurado, três dependências foram instaladas e podem ser encontradas no **package.json**, elas são:
+
+ 1. react
+ 2. react-dom
+  É o ponto de contato do React com a dom, ou seja, o modelo de objetos do browser.
+ 3. react-scripts
+  Realiza todo o processo de builds. A configuração do build está neste pacote
+
+*Das três dependências instaladas, a interação via código será realizada apenas com o react e o react-dom.*
 
 ## Seção 3 - 
 
