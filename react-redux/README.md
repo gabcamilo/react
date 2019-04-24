@@ -153,6 +153,35 @@ ReactDOM.render(
 , elemento) 
 ```
 
+#### Retornar Múltiplos Elementos
+Em algumas situações, o React suporta o retorno de múltiplos componentes.
+Isto pode ser obtido de três formas:
+
+1. Colocar os elemntos JSX dentro de uma div (solução mais utilizada):
+```
+ export default props =>
+ <div>
+     <h1>Parte 1</h1>
+     <h2>Parte 2</h2>
+ </div>
+```
+
+2. Envolver os elemnetos em uma tag `<React.Fragment>`:
+```
+ export default props =>
+ <React.Fragment>
+     <h1>Parte 1</h1>
+     <h2>Parte 2</h2>
+ </React.Fragment>
+```
+
+3. retornar um *array* de elementos jsx:
+```
+export default props =>[
+    <h1>Parte 1</h1>,
+    <h2>Parte 2</h2>
+]
+```
 
 ## Seção 3 - 
 
