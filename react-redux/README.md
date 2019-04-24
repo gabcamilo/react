@@ -182,6 +182,12 @@ export default props =>[
     <h2>Parte 2</h2>
 ]
 ```
+#### Sistema de Módulos (Import/Export)
+No sistema de módulos, quando um componente é exportado por padrão utilizando ´export default´, na importação, é possível nomea-lo de forma personalizada.
+Quando não utiliza-se a exportação padrão, é preciso explicitar os componentes retonados, tanto na exportação quanto na importação. Ainda, ao importar estes elementos, é necessário que estejam nomeados exatamente com o mesmo nome que foi exportado, caso seja necessário alterar o nome é possível utilizar um *alias* associado ao componente importado.
+Portanto, é presumível que não é possível exportar um componente anônimo sem a utilização da palavra *default*, pois seria impossível referencia-lo em um import.
+
+Como já foi visto, é possível exportar mais de um componente em um único arquivo, porém, apenas um dos componentes pode ser exportado por "padrão" utilizando a palavra *default*. Os outros devem ter seus nomes especificados na exportação.
 
 ## Seção 3 - 
 
