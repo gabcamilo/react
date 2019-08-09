@@ -106,11 +106,11 @@ Quando a página é do tipo **single page application**, todo o conteúdo gerado
 
 Ou seja, Tudo que está sendo escrito no arquivo **é JavaScript!**
 
-### Componetes
+### Componentes
 
 Um componente é "um pedaço" da aplicação, com se fosse um elemneto ou uma tag personalizada, e dentro deste componente já se tem o Html do componente, seu estilo (CSS) e seu comportamento (JavaScript), diferente do que costumava-se fazer ao separar Html, CSS e JavaScript. **Portanto, a organização da aplicação é muito mais baseada em seus conceitos (componentes) do que na tecnologia (Html, CSS e JAvaScript).**
 
-#### Primeiro Componete
+#### Primeiro Componente
 
 Arquivos com extensão **jsx** são componentes
 
